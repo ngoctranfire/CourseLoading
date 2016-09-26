@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CourseraResearch</string>
+    <string name="search_title">Course Catalog</string>
+    <string name="search_hint">Search Courses</string>
+
+    <!-- Search Fragment UI Components-->
+    <string name="image_course_description">Image for Course</string>
+</resources>

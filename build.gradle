@@ -1,0 +1,32 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+        maven {
+            url 'http://oss.jfrog.org/artifactory/oss-snapshot-local' // for realm snapshot
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.0'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.4'
+        classpath "org.jetbrains.kotlin:kotlin-android-extensions:1.0.4"
+        classpath 'io.realm:realm-gradle-plugin:1.2.0-SNAPSHOT'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.4"
+        // NOTE: Do not place your application dependencies here; they bel  ong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven {
+            url 'http://oss.jfrog.org/artifactory/oss-snapshot-local' // for realm snapshot
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
